@@ -1,0 +1,18 @@
+// Variables. Many of them UiKit Overrides
+
+// Colors
+$base-body-background:      #faf9f0;
+$text-muted-color:          #807f7b;
+
+// Typography
+$base-body-font-family:     "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-heading-font-family:  "Fanwood", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@mixin hook-base-h1() { font-style: italic; }
+@mixin hook-base-h2() { @include hook-base-h1; }
+$base-h1-font-size:         46px;
+
+// Margins & Spacing
+$base-margin:               25px;
+$utility-margin:            $base-margin;
+$base-margin-vertical:      $base-margin;
