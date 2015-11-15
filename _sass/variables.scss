@@ -2,8 +2,12 @@
 
 // Colors
 $grey:                      #807f7b;
+$beige:                     #faf9f0;
 
-$base-body-background:      #faf9f0;
+$base-body-background:      linear-gradient(to bottom, $beige 50%, rgba($beige, 0)),
+                              url('/images/topo-map.svg') 50% 100%,
+                              $beige;
+
 $subtitle-color:            $grey;
 $base-link-color:           $grey;
 
