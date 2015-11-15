@@ -1,0 +1,43 @@
+/**
+  * @name        Navigation menu for mobile.
+  * @description Primarily concerned with coloring the mobile nav.
+  *
+  * @state :active - Highlights when pressed.
+  *
+  * @markup
+  *   <ul class="mobile-nav">
+  *     <li class="mobile-nav__item">Item #1</li>
+  *     <li class="mobile-nav__item">Item #2</li>
+  *     <li class="mobile-nav__item">...</li>
+  *   </ul>
+  */
+
+$mobile-nav-background-color:        #fffef6 !default;
+$mobile-nav-background-color-hover:  #f5f4ed !default;
+$mobile-nav-text-transform:          uppercase !default;
+$mobile-nav-border-color:            #e8d7b8 !default;
+$mobile-nav-border-top-width:        5px !default;
+$mobile-nav-border-bottom-width:     $mobile-nav-border-top-width !default;
+$mobile-nav-border-inner-width:      1px !default;
+$mobile-nav-letter-spacing:          2px !default;
+
+.mobile-nav {
+  text-transform: $mobile-nav-text-transform;
+  border-color: $mobile-nav-border-color;
+  border-style: solid;
+  border-width: $mobile-nav-border-top-width 0 $mobile-nav-border-bottom-width;
+}
+
+.mobile-nav__item {
+  background-color: $mobile-nav-background-color;
+
+  + .mobile-nav__item {
+    border-top: $mobile-nav-border-inner-width solid $mobile-nav-border-color;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $mobile-nav-background-color-hover;
+  }
+}

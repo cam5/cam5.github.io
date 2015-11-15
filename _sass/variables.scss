@@ -1,8 +1,11 @@
 // Variables. Many of them UiKit Overrides
 
 // Colors
+$grey:                      #807f7b;
+
 $base-body-background:      #faf9f0;
-$text-muted-color:          #807f7b;
+$subtitle-color:            $grey;
+$base-link-color:           $grey;
 
 // Typography
 $base-body-font-family:     "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -16,3 +19,4 @@ $base-h1-font-size:         46px;
 $base-margin:               25px;
 $utility-margin:            $base-margin;
 $base-margin-vertical:      $base-margin;
+$full-width-list-horizontal-padding: 25px;
