@@ -1,0 +1,12 @@
+title: Cameron Hurd
+email: me@cameronhurd.com
+description: >
+  Cameron Hurd's personal website.
+
+baseurl: ""
+url: "http://cameronhurd.com"
+
+markdown: kramdown
+
+exclude: ['node_modules/', 'gulpfile.js', 'package.json', 'README.md']
+

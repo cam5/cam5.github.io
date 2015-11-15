@@ -1,0 +1,19 @@
+{
+  "name": "cameronhurd.com",
+  "version": "0.0.1",
+  "description": "A personal website.",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cam5/cam5.github.io"
+  },
+  "author": "Cameron Hurd",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/cam5/cam5.github.io/issues"
+  },
+  "homepage": "https://github.com/cam5/cam5.github.io",
+  "devDependencies": {
+    "uikit": "^2.23.0"
+  }
+}
