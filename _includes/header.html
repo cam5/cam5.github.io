@@ -1,6 +1,6 @@
 <header>
   <nav class="uk-hidden-small uk-navbar">
-    <div class="uk-container uk-container-center">
+    <div class="uk-container uk-container-center{% if page.container %} {{ page.container }}{% endif %}">
       <ul class="uk-navbar-nav">
         <li><a class="uk-navbar-nav__item--first" href="/about/">About</a></li>
         <li><a href="/blog/">Blog</a></li>

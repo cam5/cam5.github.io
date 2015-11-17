@@ -7,3 +7,12 @@
   margin-left: -$navbar-nav-padding-horizontal;
 }
 
+$utility-container-small-max-width: 900px !default;
+$utility-container-small-padding:   30px !default;
+
+.container--small,
+.uk-container.container--small {
+  max-width: $utility-container-small-max-width;
+  padding: 0 $utility-container-small-padding;
+}
+
