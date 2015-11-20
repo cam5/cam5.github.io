@@ -6,3 +6,9 @@
   }
 }
 
+@mixin hook-navbar-nav() {
+  &.uk-active {
+    color: $black;
+  }
+}
+

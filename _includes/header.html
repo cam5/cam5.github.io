@@ -2,17 +2,17 @@
   <nav class="uk-hidden-small uk-navbar">
     <div class="uk-container uk-container-center{% if page.container %} {{ page.container }}{% endif %}">
       <ul class="uk-navbar-nav">
-        <li><a class="uk-navbar-nav__item--first" href="/about/">About</a></li>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/portfolio/">Portfolio</a></li>
+        <li><a class="uk-navbar-nav__item--first{% if page.url == '/index.html' %} uk-active{% endif %}" href="/">About</a></li>
+        <li><a title="One day, a blog will live here." data-uk-tooltip>Blog</a></li>
+        <li><a title="Forthcoming!" data-uk-tooltip>Portfolio</a></li>
       </ul>
     </div>
   </nav>
   <nav class="uk-visible-small">
     <ul class="full-width-list mobile-nav">
       <li class="full-width-list__item mobile-nav__item"><a href="/about/">About</a></li>
-      <li class="full-width-list__item mobile-nav__item"><a href="/blog/">Blog</a></li>
-      <li class="full-width-list__item mobile-nav__item"><a href="/portfolio/">Portfolio</a></li>
+      <li class="full-width-list__item mobile-nav__item"><a title="One day, a blog will live here." data-uk-tooltip>Blog</a></li>
+      <li class="full-width-list__item mobile-nav__item"><a title="Forthcoming!" data-uk-tooltip>Portfolio</a></li>
     </ul>
   </nav>
 </header>
