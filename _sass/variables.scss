@@ -15,6 +15,14 @@ $navbar-nav-hover-background:  rgba(0, 0, 0, 0.03);
 
 $navbar-nav-color:             $grey;
 
+$button-primary-background:         darken($beige, 5);
+$button-primary-hover-background:   darken($beige, 8);
+$button-primary-active-background:  darken($beige, 12);
+
+$button-color:                 $grey;
+$button-primary-hover-color:   $grey;
+$button-primary-active-color:  $grey;
+
 // Typography
 $base-body-font-family:     "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-heading-font-family:  "Fanwood", "Helvetica Neue", Helvetica, Arial, sans-serif;
