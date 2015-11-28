@@ -1,39 +1,40 @@
 // Variables. Many of them UiKit Overrides
 
 // Colors
-$grey:                         #807f7b;
-$black:                        #444;
-$beige:                        #faf9f0;
-$base-body-background:         linear-gradient(to bottom, $beige 50%, rgba($beige, 0)),
-                               url('/images/topo-map.svg') 50% 100%,
-                               $beige;
+$grey:                                #807f7b;
+$black:                               #444;
+$beige:                               #faf9f0;
 
-$subtitle-color:               $grey;
-$base-link-color:              $grey;
+$base-body-background:                linear-gradient(to bottom, $beige 80%, rgba($beige, 0)),
+                                      url('/images/topo-map.svg') repeat-x bottom/$breakpoint-small,
+                                      $beige;
 
-$navbar-background:            rgba(0, 0, 0, 0.03);
-$navbar-nav-hover-background:  rgba(0, 0, 0, 0.03);
+$subtitle-color:                      $grey;
+$base-link-color:                     $grey;
 
-$navbar-nav-color:             $grey;
+$navbar-background:                   rgba(0, 0, 0, 0.03);
+$navbar-nav-hover-background:         rgba(0, 0, 0, 0.03);
 
-$button-primary-background:         darken($beige, 5);
-$button-primary-hover-background:   darken($beige, 8);
-$button-primary-active-background:  darken($beige, 12);
+$navbar-nav-color:                    $grey;
 
-$button-color:                 $grey;
-$button-primary-hover-color:   $grey;
-$button-primary-active-color:  $grey;
+$button-primary-background:           darken($beige, 5);
+$button-primary-hover-background:     darken($beige, 8);
+$button-primary-active-background:    darken($beige, 12);
+
+$button-color:                        $grey;
+$button-primary-hover-color:          $grey;
+$button-primary-active-color:         $grey;
 
 // Typography
-$base-body-font-family:     "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-heading-font-family:  "Fanwood", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$navbar-nav-font-family:    $base-body-font-family;
-$icon-font-path:            'https://cdnjs.cloudflare.com/ajax/libs/uikit/2.23.0/fonts/';
-
+$base-body-font-family:               "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-heading-font-family:            "Fanwood", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$navbar-nav-font-family:              $base-body-font-family;
+$icon-font-path:                      'https://cdnjs.cloudflare.com/ajax/libs/uikit/2.23.0/fonts/';
 
 @mixin hook-base-h1() { font-style: italic; }
 @mixin hook-base-h2() { @include hook-base-h1; }
-$base-h1-font-size:         46px;
+
+$base-h1-font-size:                   46px;
 
 // Margins & Spacing
 $base-margin:                         25px;

@@ -6,17 +6,9 @@
 @import
   "../node_modules/uikit/dist/scss/uikit-mixins.scss",
   "../node_modules/uikit/dist/scss/core/variables.scss",
+
+  // Set some of our variables up front
   "variables.scss",
-  "base.scss",
-  "fonts.scss",
-  "mixins.scss",
-  "utilities.scss",
-
-  // Custom Theme
-  "atoms/subtitle.scss",
-
-  "molecules/mobile-nav.scss",
-  "molecules/full-width-list.scss",
 
   // Defaults
   "../node_modules/uikit/dist/scss/core/base.scss",
@@ -69,5 +61,17 @@
   "../node_modules/uikit/dist/scss/core/utility.scss",
   "../node_modules/uikit/dist/scss/core/flex.scss",
   "../node_modules/uikit/dist/scss/core/contrast.scss",
-  "../node_modules/uikit/dist/scss/core/print.scss"
+  "../node_modules/uikit/dist/scss/core/print.scss",
+
+  // Load ours event laster™ so that it takes precedence
+  "base.scss",
+  "fonts.scss",
+  "mixins.scss",
+  "utilities.scss",
+
+  // Custom Theme
+  "atoms/subtitle.scss",
+
+  "molecules/mobile-nav.scss",
+  "molecules/full-width-list.scss"
 ;
