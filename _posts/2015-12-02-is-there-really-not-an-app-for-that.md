@@ -2,6 +2,7 @@
 title:     Is there really not an app for this?
 subtitle:  Why haven't websites become point and click?
 layout:    default
+container: container--small
 ---
 
 When we buy Apple products, the promise is that they will "just work", and they often make good on that. Most of us treat purchasing a car as a "buy and drive" affair — and that's usually how the transaction goes. Manufacturing computer hardware or an automobile is a far more complex task than building a website. Why then, is it so hard to make our way online?
