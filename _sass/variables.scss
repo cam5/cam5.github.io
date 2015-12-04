@@ -5,8 +5,8 @@ $grey:                                #807f7b;
 $black:                               #444;
 $beige:                               #faf9f0;
 
-$base-body-background:                linear-gradient(to bottom, $beige 80%, rgba($beige, 0)),
-                                      url('/images/topo-map.svg') repeat-x bottom/$breakpoint-small,
+$base-body-background:                linear-gradient(to bottom, $beige 80%, rgba($beige, 0)) fixed,
+                                      url('/images/topo-map.svg') repeat-x bottom/$breakpoint-small fixed,
                                       $beige;
 
 $subtitle-color:                      $grey;
