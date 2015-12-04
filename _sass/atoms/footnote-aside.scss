@@ -1,0 +1,20 @@
+// A dynamically-generated 'aside' element that's a companion to the standard text.
+// <div id="fnref:1-aside" class="footnote-aside" style="top:482.5px; left: 1140px;">...</div>
+//
+
+.footnote-aside {
+  opacity: 0;
+  transition: opacity 0.5s;
+  position: absolute;
+  width: 200px;
+  font-size: 12px;
+  line-height: 12px;
+  margin-left: -220px;
+}
+
+@media only screen and (min-width: ($breakpoint-xlarge + 200)) {
+  .has-footnote-aside:hover .footnote-aside {
+    opacity: 0.8;
+    transition: opacity 0.5s;
+  }
+}
