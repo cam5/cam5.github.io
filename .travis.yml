@@ -1,0 +1,33 @@
+dist: trusty
+language: ruby
+sudo: false
+
+rvm:
+  - 2.4.1
+
+env:
+  - TRAVIS_NODE_VERSION="7"
+
+cache:
+  directories:
+    - $HOME/~/.npm/_cacache
+
+before_script:
+  - bundle install
+  - npm install
+
+script:
+  - npm run gulp:build
+  - jekyll build
+  - bundle exec rake
+
+deploy:
+  provider: pages
+  local-dir: _site
+  target-branch: master
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: false
+  verbose: true
+  on: # Only deploy changes committed to develop branch
+    branch: develop

@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://github.com/cam5/cam5.github.io"
   },
+  "scripts": {
+    "gulp:build": "gulp scripts"
+  },
   "author": "Cameron Hurd",
   "license": "WTFPL",
   "bugs": {
