@@ -18,7 +18,6 @@ before_script:
 
 script:
   - npm run gulp:build
-  - jekyll build
   - bundle exec rake
 
 deploy:
