@@ -1,9 +1,9 @@
-var gulp      = require('gulp');
-var concat    = require('gulp-concat');
-var rename    = require('gulp-rename');
-var uglify    = require('gulp-uglify');
+const { src, dest, series } = require('gulp');
+const concat = require('gulp-concat');
+const rename = require('gulp-rename');
+const uglify = require('gulp-uglify');
 
-var globalConfig = {
+const globalConfig = {
   css:     'css',
   sass:    '_sass',
   js:      '_js',
@@ -11,8 +11,9 @@ var globalConfig = {
   npm:     'node_modules',
 };
 
-gulp.task('scripts', function() {
-  return gulp.src([
+
+function scripts(cb) {
+  src([
       globalConfig.npm + '/uikit/dist/js/core/core.js',
       globalConfig.npm + '/uikit/dist/js/core/touch.js',
       globalConfig.npm + '/uikit/dist/js/core/utility.js',
@@ -39,14 +40,9 @@ gulp.task('scripts', function() {
     ])
     .pipe(concat('ch.js'))
     .pipe(uglify())
-    .pipe(gulp.dest(globalConfig.js_dest));
-});
+    .pipe(dest(globalConfig.js_dest));
 
-// Watch files
-gulp.task('watch', function () {
-  gulp.watch(globalConfig.js + '/*.js', ['scripts']);
-});
+  cb();
+};
 
-// Default task
-gulp.task('default', ['watch']);
-
+exports.scripts = scripts;
