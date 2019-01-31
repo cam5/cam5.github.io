@@ -3,3 +3,4 @@ _site
 node_modules
 Session.vim
 *.log
+js/ch.js
